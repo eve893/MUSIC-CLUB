@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Club</title>
+    <link rel = "stylesheet" href="estilos.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa fa-music" aria-hidden="true"></i>
+        </label>
+        <a href="#" class="enlace">
+            <img src="logo.png" alt="" class="logo">
+        </a>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Nosotros.html">Nosotros</a></li>
+            <li><a href="Contratar.html">Contratar Banda</a></li>
+            <li><a href="serind.html">servicio individual</a></li>
+            <li><a href="clases.html">Clases</a></li>
+            <li><a href="formulario.html">Ayudanos!!</a></li>
+        </ul>
+    </nav>
+
+    <div class="form">
+        <form action="BaseDeDatos.php" method="POST">
+            <p>Ayudanos a mejorar esta pagina :D</p>
+            <br>
+            <p>Ingresa tu nombre</p>
+            <label for="nombre">Su nombre</label>
+            <br>
+            <input type="text" name="nombre" placeholder="Nombre" requeried>
+
+            <p>Correo</p>
+            <label for="correo">Direccion de Correo</label>
+            <br>
+            <input type="email" name="correo" placeholder="alguien@gmail.com" requeried>
+
+            <p>1. ¿Te gustaria agregar algun genero en especifico?</p>
+            <label for="agregar">Su agregacion</label>
+            <br>
+            <input type="text" name="agregar" placeholder="Si/No" requeried>
+
+            <p>2. Si la respuesta anterior fue si, ¿que genero te gustaria?</p>
+            <label for="genero">Su genero</label>
+            <br>
+            <textarea name="genero" placeholder="ej: salsa/clasica..." > </textarea>
+
+            <p>3. ¿Tiene o conoce a alguien con una banda?</p>
+            <label for="bandaa">Agrega banda</label>
+            <br>
+            <input type="text" name="bandaa" placeholder="Si/No" requeried>
+
+            <p>4. Si la respuesta anterior fue si¿Le gustaria agregar esa banda a esta pagina?</p>
+            <label for="Bandaagr">gusta agregar banda</label>
+            <br>
+            <input type="text" name="Bandaagr" placeholder="Si/No" >
+
+            <p>5. En caso de que la respuesta fuera si agrega nombre de banda</p>
+            <label for="nombanda">Su banda</label>
+            <br>
+            <textarea name="nombanda" placeholder="Nombre de banda" > </textarea>
+
+            <p>6. ¿Es o conoce a algun musico?</p>
+            <label for="musico">conoce musico </label>
+            <br>
+            <input type="text" name="musico" placeholder="Si/No">
+
+            <p>7. Si la respuesta anterior fue si¿Le gustaria agregar ese musico para dar clases?</p>
+            <label for="clases">gusta agregar banda</label>
+            <br>
+            <input type="text" name="clases" placeholder="Si/No">
+
+            <p>8. Agregar datos del musico</p>
+            <label for="datos">informacionn</label>
+           
+            <textarea name="datos" placeholder="informacion del musico" > </textarea>
+             <br>
+             <br>
+            
+             <input type="submit" value="Enviar">
+        </form>
+
+    </div>
+</body>
+</html>
